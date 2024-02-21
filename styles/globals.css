@@ -2,19 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .icon{
+@layer components {
+    .icon {
         @apply h-5 w-5;
     }
 }
+
 @layer utilities {
-    .scrollbar-hidden
-        ::-webkit-scrollbar {
-            display: none;
-        }
-    .scrollbar-hidden{
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
+    .scrollbar-hidden ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scrollbar-hidden {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .grid-cols-fill-200 {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
     }
 }
-    
